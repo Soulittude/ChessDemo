@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7058624172584499714}
   - component: {fileID: 5908380126006189657}
+  - component: {fileID: 6887448569372048138}
   m_Layer: 0
   m_Name: WhitePawn
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6c2eb4f64e84d674380dbee696efefef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a73fe68e6e7b1148965b8bdc61fd7db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,3 +85,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6887448569372048138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032992158322145501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d470705b4da45a82b996f85315de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movePlate: {fileID: 0}
+  whiteKing: {fileID: 0}
+  whiteQueen: {fileID: 0}
+  whiteRook: {fileID: 0}
+  whiteBishop: {fileID: 0}
+  whiteKnight: {fileID: 0}
+  whitePawn: {fileID: 0}
+  blackKing: {fileID: 0}
+  blackQueen: {fileID: 0}
+  blackRook: {fileID: 0}
+  blackBishop: {fileID: 0}
+  blackKnight: {fileID: 0}
+  blackPawn: {fileID: 0}
