@@ -46,7 +46,7 @@ public class Chessman : MonoBehaviour
         }
     }
 
-    private void SetCoords()
+    public void SetCoords()
     {
         float x = xBoard;
         float y = yBoard;
