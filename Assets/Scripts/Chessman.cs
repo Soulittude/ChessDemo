@@ -82,4 +82,92 @@ public class Chessman : MonoBehaviour
     {
         yBoard = y;
     }
+
+    private void OnMouseUp()
+    {
+        DestroyMovePlates();
+
+        InitiateMovePlates();
+    }
+
+    public void DestroyMovePlates()
+    {
+        GameObject[] movePlates = GameObject.FindGameObjectsWithTag("MovePlate");
+
+        for (int i = 0; i < movePlates.Length; i++)
+        {
+            Destroy(movePlates[i]);
+        }
+    }
+
+    public void InitiateMovePlates()
+    {
+        switch (this.name)
+        {
+            case "whiteQueen":
+            case "blackQueen":
+                LineMovePlate(1, 0);
+                LineMovePlate(0, 1);
+                LineMovePlate(1, 1);
+                LineMovePlate(-1, 0);
+                LineMovePlate(0, -1);
+                LineMovePlate(-1, -1);
+                LineMovePlate(-1, 1);
+                LineMovePlate(1, -1);
+                break;
+
+            case "whiteKnight":
+            case "blackKnight":
+                LMovePlate();
+                break;
+
+            case "whiteBishop":
+            case "blackBishop":
+                LineMovePlate(1, 1);
+                LineMovePlate(1, -1);
+                LineMovePlate(-1, 1);
+                LineMovePlate(-1, -1);
+                break;
+
+            case "whiteKing":
+            case "blackKing":
+                SurroundMovePlate();
+                break;
+
+            case "whiteRook":
+            case "blackRook":
+                LineMovePlate(1, 0);
+                LineMovePlate(0, 1);
+                LineMovePlate(-1, 0);
+                LineMovePlate(0, -1);
+                break;
+
+            case "whitePawn":
+                PawnMovePlate(xBoard, yBoard - 1);
+                break;
+            case "blackPawn":
+                PawnMovePlate(xBoard, yBoard + 1);
+                break;
+        }
+    }
+
+    private void PawnMovePlate(int xBoard, int v)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void SurroundMovePlate()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void LMovePlate()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void LineMovePlate(int v1, int v2)
+    {
+        throw new NotImplementedException();
+    }
 }
