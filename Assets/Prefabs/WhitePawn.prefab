@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7058624172584499714}
   - component: {fileID: 5908380126006189657}
   - component: {fileID: 6887448569372048138}
-  - component: {fileID: -8624595340603406801}
+  - component: {fileID: 5646400097915414538}
   m_Layer: 0
   m_Name: WhitePawn
   m_TagString: Untagged
@@ -112,7 +112,7 @@ MonoBehaviour:
   blackBishop: {fileID: 21300000, guid: 12b7e8c957c1a5044b415af3c64693f1, type: 3}
   blackKnight: {fileID: 21300000, guid: 967f56fe01f413142afa58d2c6e7d785, type: 3}
   blackPawn: {fileID: 21300000, guid: 7f6cfc9698c87d348ac6dd7ea6627d23, type: 3}
---- !u!61 &-8624595340603406801
+--- !u!61 &5646400097915414538
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,5 +155,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
