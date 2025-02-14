@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -116,9 +117,9 @@ public class Game : MonoBehaviour
     {
         gameOver = true;
 
-        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<Text>().enabled = true;
-        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<Text>().text = playerWinner + " is win!";
+        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<TMP_Text>().enabled = true;
+        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<TMP_Text>().text = playerWinner + " is the winner!";
 
-        GameObject.FindGameObjectWithTag("RestartText").GetComponent<Text>().enabled = true;
+        GameObject.FindGameObjectWithTag("RestartText").GetComponent<TMP_Text>().enabled = true;
     }
 }
