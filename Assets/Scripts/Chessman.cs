@@ -85,10 +85,13 @@ public class Chessman : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("asdasd");
-        DestroyMovePlates();
+        if (!controller.GetComponent<Game>().IsGameOver()
+        && controller.GetComponent<Game>().GetCurrentPlayer() == player)
+        {
+            DestroyMovePlates();
 
-        InitiateMovePlates();
+            InitiateMovePlates();
+        }
     }
 
     public void DestroyMovePlates()
@@ -212,7 +215,7 @@ public class Chessman : MonoBehaviour
             y += yIncrement;
         }
 
-        if (sc.PositionOnBoard(x, y) 
+        if (sc.PositionOnBoard(x, y)
         && sc.GetPosition(x, y).GetComponent<Chessman>().player != player)
         {
             MovePlateAttackSpawn(x, y);
@@ -240,7 +243,6 @@ public class Chessman : MonoBehaviour
 
     private void MovePlateSpawn(int matrixX, int matrixY)
     {
-        Debug.Log("qqqqq");
         float x = matrixX;
         float y = matrixY;
 
